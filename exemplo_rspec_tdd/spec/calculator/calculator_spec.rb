@@ -5,9 +5,15 @@ require 'calculator'
 describe Calculator do
 	# Descricao do que vc espera
 	it 'use sum method for 2 numbers' do
+		
+		##### Setup #####
 		calc = Calculator.new
+		
+		##### Exercise ##### 
 		result = calc.sum(5, 7)
-		# O resultado deve ser igual a 11
+
+		###### Verify #####
+ 		# O resultado deve ser igual a 11
 		expect(result).to eq(12)
 	end
 
