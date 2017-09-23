@@ -1,25 +1,13 @@
-# Adicionar o arquivo da class ou arquivo solicitado e n precisa ser o caminho todo / relativo
-require 'calculator'
+#Adiciona a respectiva classe para o teste
+require 'Calculator'
 
-#Descreve o teste
+#Inicia o teste passando a descricao do teste, ou seja, o teste sera referente à classe Calculator
 describe Calculator do
-	# Descricao do que vc espera
-	it 'use sum method for 2 numbers' do
-		
-		##### Setup #####
-		calc = Calculator.new
-		
-		##### Exercise ##### 
-		result = calc.sum(5, 7)
-
-		###### Verify #####
- 		# O resultado deve ser igual a 11
-		expect(result).to eq(12)
-	end
-
-	it 'use sum method for 2 numbers negative numbers' do
-		calc = Calculator.new
-		result = calc.sum(-5, 7)
-		expect(result).to eq(2)
+	#Passando o contexto, por ex. testaremos o metodo sum da classe Calculator
+	context '#sum' do
+		#O teste e valor esperado
+		it 'for 2 numbers' do
+			
+		end
 	end
 end
