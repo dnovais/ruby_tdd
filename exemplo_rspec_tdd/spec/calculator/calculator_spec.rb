@@ -1,10 +1,11 @@
 # Adicionar o arquivo da class ou arquivo solicitado e n precisa ser o caminho todo / relativo
 require 'calculator'
 
-#Descreve o teste
-describe Calculator do
+#Descreve o teste, o nome da classe e podemos também adicionar uma descrição para o describe
+describe Calculator, 'One test to Calculator Class' do
 
-	# Fazendo o setup usando subject como outro nome
+	# Fazendo o setup usando subject explicito como outro nome, e se precisar passar parametros
+	# basta passa - los dentro do described_class
 	subject(:calc) { described_class.new() }
 
 	# O teste da classe Calculator no contexto do metodo sum
