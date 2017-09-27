@@ -34,10 +34,10 @@ describe Calculator do
 		# Se deixar o teste assim, ele ira aparecer como pendente.
 		#it 'for 2 numbers negatives'
 		
-		# Outra forma de deixar o teste como pendente ou cancelado, seria usar o x antes do it
+		# Outra forma de deixar o teste como pendente ou cancelado, seria usar o x antes do it...
 		xit 'for 2 numbers negatives' do
-			result = calc.sum(-5, -7)
-			expect(result).to eq(2)
+			result = calc.sum(-5, -8)
+			expect(result).to eq(-2)
 		end
 
 		#### Dicas ####
