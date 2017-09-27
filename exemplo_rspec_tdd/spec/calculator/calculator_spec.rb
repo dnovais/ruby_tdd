@@ -1,10 +1,11 @@
 #Adiciona a respectiva classe para o teste
 require 'Calculator'
 
-#Inicia o teste passando a descricao do teste, ou seja, o teste sera referente à classe Calculator
-describe Calculator do
+#Descreve o teste, o nome da classe e podemos também adicionar uma descrição para o describe
+describe Calculator, 'One test to Calculator Class' do
 
-	# Fazendo o setup usando subject como outro nome
+	# Fazendo o setup usando subject explicito como outro nome, e se precisar passar parametros
+	# basta passa - los dentro do described_class
 	subject(:calc) { described_class.new() }
 
 	# Descricao do que vc espera
