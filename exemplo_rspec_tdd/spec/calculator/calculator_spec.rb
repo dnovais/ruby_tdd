@@ -1,21 +1,19 @@
-# Adicionar o arquivo da class ou arquivo solicitado e n precisa ser o caminho todo / relativo
+# Add the class archive requested, and don't need the full way
 require 'calculator'
 
-#Descreve o teste, o nome da classe e podemos também adicionar uma descrição para o describe
+# Describe the test, can be the class name or one description
 describe Calculator, 'One test to Calculator Class' do
 
-	# Fazendo o setup usando subject explicito como outro nome, e se precisar passar parametros
-	# basta passa - los dentro do described_class
+	# Make a setup using the explicit subject, and if need, can pass the parameters
 	subject(:calc) { described_class.new() }
 
-	# O teste da classe Calculator no contexto do metodo sum
+	# The test of the class Calculator in the context of the method Sum
 	context '#sum' do
-		# Descricao do que vc espera
+		# Description about what do you wait
 		it 'for 2 numbers' do
 			
 			##### Setup #####
-			# usando o subject, não é necessário instanciar a classe, pois quando se usa o subject, ja subentende
-			# que esta sendo referenciado uma instancia da classe.
+			# Using the subject don't be needed instantiate, because when is used subject, it's already understood that don't that this make reference a classe.
 			#calc = Calculator.new
 			
 			##### Exercise ##### 
@@ -23,7 +21,7 @@ describe Calculator, 'One test to Calculator Class' do
 			result = calc.sum(5, 7)
 
 			###### Verify #####
-			# O resultado deve ser igual a 11
+			# The result should be 12
 			expect(result).to eq(12)
 		end
 
@@ -32,19 +30,19 @@ describe Calculator, 'One test to Calculator Class' do
 			expect(result).to eq(2)
 		end
 
-		# Se deixar o teste assim, ele ira aparecer como pendente.
+		# If let the test like this, this will appear like pending.
 		#it 'for 2 numbers negatives'
 		
-		# Outra forma de deixar o teste como pendente ou cancelado, seria usar o x antes do it
+		# Other form to let the test like pending or canceled, would be put de x before the "it"
 		xit 'for 2 numbers negatives' do
 			result = calc.sum(-5, -7)
 			expect(result).to eq(2)
 		end
 
 		#### Dicas ###
-		# Para rodar uma linha especifica do test 
+		# To run an specific test and in the specific line 
 			#spec spec/calculator/calculator_spec.rb:15
-		# Para rodar um teste especifico pelo seu titulo
+		# To run an specific test with specfic title
 			#spec spec/calculator/calculator_spec.rb -e "for 2 numbers, one negative, and other, positive numbers"
 
 	end
