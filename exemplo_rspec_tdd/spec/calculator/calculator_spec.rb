@@ -7,7 +7,22 @@ describe Calculator do
 	context '#sum' do
 		#O teste e valor esperado
 		it 'for 2 numbers' do
-			
+			#setup
+			calc = Calculator.new
+			#Exercise
+			result = calc.sum(2, 5)
+			#verify
+			expect(result).to eq(7)
 		end
+
+		it 'for 2 numbers, one negative and other positive' do
+			#setup
+			calc = Calculator.new
+			#exercise
+			result = calc.sum(-2, 5)
+			#verify
+			expect(result).to eq(3)
+		end
+
 	end
 end
