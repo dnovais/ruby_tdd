@@ -1,10 +1,10 @@
 require "string_not_empty"
 
-# Describes aninhados
+# Nested describes
 describe String do
   describe StringNotEmpty do
     it "String not empty" do
-      # Subject implicito
+      # Implicit subject
       expect(subject).to eq("I m not empty")
     end
   end
