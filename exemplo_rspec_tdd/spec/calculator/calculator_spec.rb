@@ -40,7 +40,7 @@ describe Calculator do
 			expect(result).to eq(2)
 		end
 
-		#### Dicas ###
+		#### Dicas ####
 		# Para rodar uma linha especifica do test 
 			#spec spec/calculator/calculator_spec.rb:15
 		# Para rodar um teste especifico pelo seu titulo
