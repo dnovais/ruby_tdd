@@ -39,7 +39,7 @@ describe Calculator, 'One test to Calculator Class' do
 			expect(result).to eq(2)
 		end
 
-		#### Dicas ###
+		#### Tips ###
 		# To run an specific test and in the specific line 
 			#spec spec/calculator/calculator_spec.rb:15
 		# To run an specific test with specfic title
