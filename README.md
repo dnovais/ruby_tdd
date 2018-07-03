@@ -17,3 +17,19 @@ Com os testes unitário feitos, podemos testar a integração entre os requisito
 
 Este nível de teste verifica se o sistema funciona com todas as unidades trabalhando juntas. Ele é comumente chamado de teste de caixa preta, já que o sistema é testado “com tudo ligado”: banco de dados, serviços web, batch jobs, e etc.
 
+## TDD (Test Driven Development)
+
+### O que é TDD?
+
+TDD é o desenvolvimento guiado por testes. Ou seja o teste é feito antes mesmo de colocar a mão na massa, primeiro cria-se o teste e depois o código. O que melhora o design do sistema.
+
+Funciona da seguinte forma:
+
+1. Cria - se o teste que falhe (RED);
+2. Cria - se o código para passar no teste (GREEN);
+3. Refatore o código;
+
+Dessa forma o seu código ganha uma qualidade maior e garante uma redução de retrabalho consideravelmente.
+
+"Perde-se" tempo no inicio do projeto, mas com o tempo, os benefícios são notáveis.
+ 
