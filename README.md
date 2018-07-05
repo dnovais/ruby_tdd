@@ -45,3 +45,32 @@ Podemos trabalhar com o Rspec no Ruby On Rails e em projetos Ruby puros. Como es
 ```
 rspec --init
 ```
+
+O comando rspec --init gera 2 arquivos:
+
+````
+- .rspec
+- spec/spec_helper.rb
+````
+
+#### Em nosso projeto, a pasta principal (padrão das gems por ex.) lib.
+
+O Rspec adiciona a pasta lib em nosso load_path, dessa forma conseguimos ter acesso aos arquivos criados dentro da lib.
+
+Lembrando que precisamos adicionar o require 'calculator', como no exemplo:
+
+````
+require 'calculator'
+
+describe Calculator do
+
+ it 'Sum method for 2 numbers' do
+ end
+
+end
+````
+
+Todos os testes ficarão dentro de nossa pasta spec.
+
+Os testes deveram seguir a nomenclatura _spec em seu sufixo, como por exemplo, ``calculator_spec.rb``.
+

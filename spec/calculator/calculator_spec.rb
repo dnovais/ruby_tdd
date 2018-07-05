@@ -9,7 +9,7 @@ describe Calculator, 'One test to Calculator Class' do
 
 	# The test of the class Calculator in the context of the method Sum
 	context '#sum' do
-		# Description about what do you wait
+		# Description about what do you wait, you could use it, specify or example
 		it 'for 2 numbers' do
 			
 			##### Setup #####
