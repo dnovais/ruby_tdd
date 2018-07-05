@@ -17,6 +17,10 @@ Com os testes unitário feitos, podemos testar a integração entre os requisito
 
 Este nível de teste verifica se o sistema funciona com todas as unidades trabalhando juntas. Ele é comumente chamado de teste de caixa preta, já que o sistema é testado “com tudo ligado”: banco de dados, serviços web, batch jobs, e etc.
 
+### Teste de aceitação
+
+Os testes de aceitação, famosos com a onda ágil, são, no fim, testes de sistema. Testes de aceitação, são aqueles onde as equipes ágeis dizem se uma determinada funcionalidade está "aceita" ou não.
+
 ## TDD (Test Driven Development)
 
 ### O que é TDD?
@@ -32,4 +36,12 @@ Funciona da seguinte forma:
 Dessa forma o seu código ganha uma qualidade maior e garante uma redução de retrabalho consideravelmente.
 
 "Perde-se" tempo no inicio do projeto, mas com o tempo, os benefícios são notáveis.
- 
+
+## RSPEC
+A gem Rspec é uma meta-gem, que engloba outras gems, como por ex. a Rspec-core, Rspec-expectations e Rspec-mocks.
+
+Podemos trabalhar com o Rspec no Ruby On Rails e em projetos Ruby puros. Como este projeto.
+
+```
+rspec --init
+```
