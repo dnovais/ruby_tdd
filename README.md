@@ -37,6 +37,8 @@ Dessa forma o seu código ganha uma qualidade maior e garante uma redução de r
 
 "Perde-se" tempo no inicio do projeto, mas com o tempo, os benefícios são notáveis.
 
+> TDD não é necessáriamente testar o software e sim uma espeficação de como utilizar o seu código e deixar que isso guie o design do software.
+
 ## RSPEC
 A gem Rspec é uma meta-gem, que engloba outras gems, como por ex. a Rspec-core, Rspec-expectations e Rspec-mocks.
 
@@ -73,4 +75,38 @@ end
 Todos os testes ficarão dentro de nossa pasta spec.
 
 Os testes deveram seguir a nomenclatura _spec em seu sufixo, como por exemplo, ``calculator_spec.rb``.
+
+#### Os testes devem ser:
+
+1. Confiáveis
+2. Fáceis de escrever
+3. Fáceis de entender do ínicio ao fim
+4. Não ser focados em velocidade e sim em qualidade
+
+### Um teste padrão xUnit tem por padrão 4 etapas
+
+> Xunit: Origem dos testes. 
+
+- Setup: Coloca o que esta sendo testado (SUT - System Under Test). Ou seja a preparação do teste.
+- Exercise: Quando você interage com o SUT.
+- Verify: Quando verifica se o resultado/comportamento é o esperado.
+- Teardown: O sistema volta ao estado anterior ao teste. O Rspec já cuida disso para nós.
+
+## BDD (Behaviour Driven Development)
+
+A sigla BDD significa Desenvolvimento guiado a comportamento. Hoje é uma abordagem de desenvolvimento de software, mais que uma prática.
+
+No final o TDD é uma consequencia do processo do BDD. Onde saimos do teste em si, pensamos no comportamento.
+
+Onde especifa-se comportamentos.
+
+O BDD permite que o cliente participe da especificação dos cenários.
+
+---
+
+Uma boa prática - Consulte e consuma o site http://www.betterspecs.org/
+
+
+
+
 

@@ -4,12 +4,15 @@ require 'calculator'
 # Describe the test, can be the class name or one description
 describe Calculator, 'One test to Calculator Class' do
 
+	# If we want use calc with instance of object, we can use subject(:calc) { described_class.new }
 	# Make a setup using the explicit subject, and if need, can pass the parameters
 	subject(:calc) { described_class.new() }
 
 	# The test of the class Calculator in the context of the method Sum
+	# To class methods -> .
+	# To instance methods -> #
 	context '#sum' do
-		# Description about what do you wait, you could use it, specify or example
+		# Description about what do you wait, you could use: it, specify or example
 		it 'for 2 numbers' do
 			
 			##### Setup #####
