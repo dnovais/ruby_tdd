@@ -14,6 +14,7 @@ describe 'Matchers - Classes' do
       expect(10).to be_kind_of(Integer)
     end
 
+    # The matcher be_kind_of get all heritage
     it 'Using matcher be_kind_of to nested instance' do
       string = StringNotEmpty.new
       expect(string).to be_kind_of(String)
@@ -22,6 +23,7 @@ describe 'Matchers - Classes' do
   end
 
   context 'Testing the matcher respont_to' do
+    # The matcher respond_to, verify if the object get response from the method.
     it 'Using matcher respond_to' do
       expect("test").to respond_to(:count)
     end

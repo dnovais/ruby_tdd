@@ -1,3 +1,4 @@
+# Remember to put require file of class references in subject
 require 'person'
 
 describe 'Matchers - Attributes' do
