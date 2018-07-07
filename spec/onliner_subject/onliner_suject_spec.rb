@@ -4,7 +4,7 @@ describe (1..5), 'On-liner subject' do
       is_expected.to cover(2)
     end
 
-    # Implicit description
+    # Implicit description, the description is in the same time test and description
     # On-line sintax
     it {is_expected.to cover(3)}
 
